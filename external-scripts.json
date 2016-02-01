@@ -17,5 +17,6 @@
   "hubot-victory",
   "hubot-mute",
   "hubot-codinglove",
-  "hubot-calculator"
+  "hubot-calculator",
+  "hubot-trello"
 ]

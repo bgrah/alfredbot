@@ -16,7 +16,5 @@
   "hubot-mute",
   "hubot-codinglove",
   "hubot-calculator",
-  "hubot-trello",
-  "hubot-slack-google-auth",
-  "hubot-slack-gcal"
+  "hubot-trello"
 ]

@@ -26,9 +26,10 @@ module.exports = (robot) ->
    robot.respond /corpbs/i, (res) ->
      a = adverbs[ Math.floor(Math.random() * adverbs.length) ]
      b = verbs[ Math.floor(Math.random() * verbs.length) ]
-     res.send [a, b]
-     # res.send c
-	 # res.send c
+	 c = [a, b]
+     res.send a
+     res.send b
+	 res.send c
      #res.send '#{res.random adverbs} + ' ' + #{res.random adverbs}' #+ ' ' + res.random verbs + ' ' + res.random adjectives + ' ' + res.random nouns
 
    robot.respond /pie/i, (res) ->

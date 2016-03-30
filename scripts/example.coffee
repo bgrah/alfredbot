@@ -56,10 +56,15 @@ module.exports = (robot) ->
    katja = ['Yes my love!', 'Sure my love!', 'Of course my love!', 'Your wish is my command love!', 'Always for women equality love!', 'A just got a boner listening to you my love', 'You look increbile my love!']
    mojca = ["Don't hit me!!", 'Force is strong with this one', 'Words of wisdom... Amen!', 'Uuu kaka ritka, u kaka kitkica, taka ritka ti da užitka!!!', 'Res? Shut up.', 'Veš na koga mislm ko se praskam po jajcih? Nate že ne -.- ']
    blaz = ['Lahko se igrava duhovnika in malega dečka če želiš ;)', 'Hm... si ziher? Mislm da si zajebu', 'Raje si počohaj jajca in preveri če maš raka', 'Uuuuu dobra dobra, jst sm za!', 'En hribček bom kupil bom trto sadil, še Blaža povabil in se skupi napil', 'Tvoji oči so magične... kar glej me ;*', 'I think we need to agree to disagree', 'Napiši "jst sm zakon"']
+   
+   bedno = ['zanič', 'ogabno', 'brezveze', 'neumno do amena', 'jezus zdele bruhu v nebesih ko je to vidu', 'to? Nč od nč!', 'pička maš kej proti?!', 'iščš frke?', 'to en čudak naredu?']
+   
+   robot.hear /hudo/i, (res) ->
+     res.reply "Ne pa ne! Kva je #{bedno[Math.floor(Math.random() * bedno.length)]}"
    robot.listen(
     (message) -> # Match function
       # Occassionally respond to things that Steve says
-      message.user.name is "gregor" and message.match 'jst sm zakon'
+      message.user.name is "blaaz" and message.match '/jst sm zakon/i'
     (response) -> # Standard listener callback
       # Let Steve know how happy you are that he exists
       response.reply 'Ne pa nisi! :P'

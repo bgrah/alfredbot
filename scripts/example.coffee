@@ -91,16 +91,16 @@ module.exports = (robot) ->
    robot.respond /lulz/i, (res) ->
      res.send res.random lulz
 	 
-   katja = ['Yes my love!', 'Sure my love!', 'Of course my love!', 'Your wish is my command love!', 'Always for women equality love!', 'A just got a boner listening to you my love', 'You look increbile my love!']
-   mojca = ["Don't hit me!!", 'Force is strong with this one', 'Words of wisdom... Amen!', 'Uuu kaka ritka, u kaka kitkica, taka ritka ti da užitka!!!', 'Res? Shut up.', 'Veš na koga mislm ko se praskam po jajcih? Nate že ne -.- ']
-   blaž = ['Lahko se igrava duhovnika in malega dečka če želiš ;)', 'Hm... si ziher? Kaj pa če bi ']
+   # katja = ['Yes my love!', 'Sure my love!', 'Of course my love!', 'Your wish is my command love!', 'Always for women equality love!', 'A just got a boner listening to you my love', 'You look increbile my love!']
+   # mojca = ["Don't hit me!!", 'Force is strong with this one', 'Words of wisdom... Amen!', 'Uuu kaka ritka, u kaka kitkica, taka ritka ti da užitka!!!', 'Res? Shut up.', 'Veš na koga mislm ko se praskam po jajcih? Nate že ne -.- ']
+   # blaž = ['Lahko se igrava duhovnika in malega dečka če želiš ;)', 'Hm... si ziher? Kaj pa če bi ']
 	 
-   robot.listen(
-     (message) ->
-	   message.user.name is "gregor" and Math.random() > 0.8
-	 (response) ->
-	   response.reply response.random katja
-   )
+   # robot.listen(
+     # (message) ->
+	   # message.user.name is "gregor" and Math.random() > 0.8
+	 # (response) ->
+	   # response.reply response.random katja
+   # )
   #
   # robot.topic (res) ->
   #   res.send "#{res.message.text}? That's a Paddlin'"

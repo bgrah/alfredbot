@@ -27,7 +27,7 @@ module.exports = (robot) ->
      a = adverbs[ Math.floor(Math.random() * adverbs.length) ]
      b = verbs[ Math.floor(Math.random() * verbs.length) ]
 	 c = []
-	 c.push [a, b]
+	 c.push([a, b])
      res.send a
      res.send b
 	 res.send c

@@ -61,7 +61,7 @@ module.exports = (robot) ->
      (message) ->
 	   message.user.name is "gregor" and Math.random() > 0.8
 	 (response) ->
-	   response.reply response.random katja
+	   response.reply katja[Math.floor(Math.random() * katja.length) ]
    )
   #
   # robot.topic (res) ->

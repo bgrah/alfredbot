@@ -16,8 +16,8 @@ module.exports = (robot) ->
    robot.hear /newb/i, (res) ->
      res.send "yes master?"
 	 
-	robot.respond /pie/i, (res) ->
-		res.emote "makes a freshly baked pie"
+   robot.respond /pie/i, (res) ->
+     res.emote "makes a freshly baked pie"
   #
   # robot.respond /open the (.*) doors/i, (res) ->
   #   doorType = res.match[1]

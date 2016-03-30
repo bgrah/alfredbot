@@ -26,7 +26,7 @@ module.exports = (robot) ->
    robot.respond /corpbs/i, (res) ->
      a = res.random adverbs
      # res.send a
-	 res.send typeof a
+	 res.send (typeof a).toString()
      # b = res.random verbs
      # res.send b
      #res.send '#{res.random adverbs} + ' ' + #{res.random adverbs}' #+ ' ' + res.random verbs + ' ' + res.random adjectives + ' ' + res.random nouns

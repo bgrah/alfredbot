@@ -24,8 +24,8 @@ module.exports = (robot) ->
    nouns = [ 'action items', 'alignments', 'applications', 'architectures', 'bandwidth', 'benefits', 'best practices', 'catalysts for change', 'channels', 'collaboration and idea-sharing', 'communities', 'content', 'convergence', 'core competencies', 'customer service', 'data', 'deliverables', 'e-business', 'e-commerce', 'e-markets', 'e-tailers', 'e-services', 'experiences', 'expertise', 'functionalities', 'growth strategies', 'human capital', 'ideas', 'imperatives', 'infomediaries', 'information', 'infrastructures', 'initiatives', 'innovation', 'intellectual capital', 'interfaces', 'internal or "organic" sources', 'leadership', 'leadership skills', 'manufactured products', 'markets', 'materials', 'meta-services', 'methodologies', 'methods of empowerment', 'metrics', 'mindshare', 'models', 'networks', 'niches', 'niche markets', 'opportunities', '"outside the box" thinking', 'outsourcing', 'paradigms', 'partnerships', 'platforms', 'portals', 'potentialities', 'process improvements', 'processes', 'products', 'quality vectors', 'relationships', 'resources', 'results', 'ROI', 'scenarios', 'schemas', 'services', 'solutions', 'sources', 'strategic theme areas', 'supply chains', 'synergy', 'systems', 'technologies', 'technology', 'testing procedures', 'total linkage', 'users', 'value', 'vortals', 'web-readiness', 'web services', 'fungibility', 'clouds', 'nosql', 'storage', 'virtualization']
 
    robot.respond /corpbs/i, (res) ->
-     a = res.random adverbs
-     b = res.random verbs
+     a = adverbs[ Math.floor(Math.random() * adverbs.length) ]
+     b = verbs[ Math.floor(Math.random() * verbs.length) ]
      res.send a
      res.send b
 	 c = a + b

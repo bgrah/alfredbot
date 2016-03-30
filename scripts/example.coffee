@@ -26,7 +26,7 @@ module.exports = (robot) ->
    robot.respond /corpbs/i, (res) ->
      a = adverbs[ Math.floor(Math.random() * adverbs.length) ]
      b = verbs[ Math.floor(Math.random() * verbs.length) ]
-	 c = a b
+	 c = a + b
      res.send a
      res.send b
 	 res.send c

@@ -25,10 +25,10 @@ module.exports = (robot) ->
 
    robot.respond /corpbs/i, (res) 
      a = res.random adverbs
-     b = res.random verbs
+     res.send a
+     # b = res.random verbs
 	 # res.send typeof a
-     # res.send a
-     res.send b
+     # res.send b
      #res.send '#{res.random adverbs} + ' ' + #{res.random adverbs}' #+ ' ' + res.random verbs + ' ' + res.random adjectives + ' ' + res.random nouns
 
    robot.respond /pie/i, (res) ->

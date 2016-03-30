@@ -58,11 +58,19 @@ module.exports = (robot) ->
    blaž = ['Lahko se igrava duhovnika in malega dečka če želiš ;)', 'Hm... si ziher? Mislm da si zajebu']
 	 
    robot.listen(
-     (message) ->
-	   message.user.name is "gregor" and Math.random() > 0.8
-	 (response) ->
-	   response.reply katja[Math.floor(Math.random() * katja.length) ]
+    (message) -> # Match function
+      # Occassionally respond to things that Steve says
+      message.user.name is "gregor" and Math.random() > 0.8
+    (response) -> # Standard listener callback
+      # Let Steve know how happy you are that he exists
+      response.reply "HI STEVE! YOU'RE MY BEST FRIEND! (but only like #{response.match * 100}% of the time)"
    )
+  # robot.listen(
+  # (message) ->
+  # message.user.name is "gregor" and Math.random() > 0.8
+  # (response) ->
+  # response.reply katja[Math.floor(Math.random() * katja.length) ]
+  # )
   #
   # robot.topic (res) ->
   #   res.send "#{res.message.text}? That's a Paddlin'"

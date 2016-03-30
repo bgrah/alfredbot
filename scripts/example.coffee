@@ -63,7 +63,7 @@ module.exports = (robot) ->
       message.user.name is "gregor" and Math.random() > 0.8
     (response) -> # Standard listener callback
       # Let Steve know how happy you are that he exists
-      response.reply "HI STEVE! YOU'RE MY BEST FRIEND! (but only like #{response.match * 100}% of the time)"
+      response.reply katja[Math.floor(Math.random() * katja.length)]
    )
   # robot.listen(
   # (message) ->

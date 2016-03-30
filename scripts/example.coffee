@@ -25,7 +25,7 @@ module.exports = (robot) ->
 
    robot.respond /corpbs/i, (res) ->
      res.send res.random adverbs
-     res.send '#{res.random adverbs} + ' ' + #{res.random adverbs}' #+ ' ' + res.random verbs + ' ' + res.random adjectives + ' ' + res.random nouns
+     #res.send '#{res.random adverbs} + ' ' + #{res.random adverbs}' #+ ' ' + res.random verbs + ' ' + res.random adjectives + ' ' + res.random nouns
 
    robot.respond /pie/i, (res) ->
      res.emote "makes a freshly baked pie"

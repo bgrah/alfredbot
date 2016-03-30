@@ -10,11 +10,11 @@
 
 module.exports = (robot) ->
 
-   robot.hear /badger/i, (res) ->
-     res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
+   # robot.hear /badger/i, (res) ->
+     # res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
 
-   robot.hear /newb/i, (res) ->
-     res.send "yes master?"
+   # robot.hear /newb/i, (res) ->
+     # res.send "yes master?"
 	 
    robot.respond /pie/i, (res) ->
      res.emote "makes a freshly baked pie"

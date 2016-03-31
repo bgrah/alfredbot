@@ -82,7 +82,7 @@ module.exports = (robot) ->
    robot.listen(
     (message) -> # Match function
       # Occassionally respond to things that Steve says
-      message.user.name is "gregor" and Math.random() > 0.9
+      message.user.name is "elpolh" and Math.random() > 0.9
     (response) -> # Standard listener callback
       # Let Steve know how happy you are that he exists
       response.reply katja[Math.floor(Math.random() * katja.length)]

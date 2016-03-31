@@ -66,7 +66,7 @@ module.exports = (robot) ->
    robot.listen(
     (message) -> # Match function
       # Occassionally respond to things that Steve says
-      message.user.name is "blaaz" and message.match '/jst sm zakon/i'
+      message.user.name is "gregor" and message.match '/jst sm zakon/i'
     (response) -> # Standard listener callback
       # Let Steve know how happy you are that he exists
       response.reply 'Ne pa nisi! :P'

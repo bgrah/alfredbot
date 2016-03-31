@@ -7,10 +7,10 @@
 #   Uncomment the ones you want to try and experiment with.
 #
 #   These are from the scripting documentation: https://github.com/github/hubot/blob/master/docs/scripting.md
-
-module.exports = (robot) ->
    process.env.HUBOT_GOOGLE_CSE_ID = "000171919185702538393:_2doz2hlqr8"
    process.env.HUBOT_GOOGLE_CSE_KEY = "AIzaSyCD0OLDgpl_A_w7yD2vDMXIanAs5t-dWUg"
+
+module.exports = (robot) ->
    # robot.hear /badger/i, (res) ->
      # res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
 

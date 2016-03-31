@@ -23,8 +23,10 @@ module.exports = (robot) ->
 
    nouns = [ "action items", "alignments", "applications", "architectures", "bandwidth", "benefits", "best practices", "catalysts for change", "channels", "collaboration and idea-sharing", "communities", "content", "convergence", "core competencies", "customer service", "data", "deliverables", "e-business", "e-commerce", "e-markets", "e-tailers", "e-services", "experiences", "expertise", "functionalities", "growth strategies", "human capital", "ideas", "imperatives", "infomediaries", "information", "infrastructures", "initiatives", "innovation", "intellectual capital", "interfaces", "internal or organic sources", "leadership", "leadership skills", "manufactured products", "markets", "materials", "meta-services", "methodologies", "methods of empowerment", "metrics", "mindshare", "models", "networks", "niches", "niche markets", "opportunities", "outside the box thinking", "outsourcing", "paradigms", "partnerships", "platforms", "portals", "potentialities", "process improvements", "processes", "products", "quality vectors", "relationships", "resources", "results", "ROI", "scenarios", "schemas", "services", "solutions", "sources", "strategic theme areas", "supply chains", "synergy", "systems", "technologies", "technology", "testing procedures", "total linkage", "users", "value", "vortals", "web-readiness", "web services", "fungibility", "clouds", "nosql", "storage", "virtualization"]
 
+   preface = ['We need to', 'We have to', 'Next step is to', 'Market dictate us to', 'WE\'ll achieve synergy with']
+   
    robot.hear /corpbs/i, (res) ->
-     res.reply "We need to #{adverbs[ Math.floor(Math.random() * adverbs.length) ]} #{verbs[ Math.floor(Math.random() * verbs.length) ]} #{adjectives[ Math.floor(Math.random() * adjectives.length) ]} #{nouns[ Math.floor(Math.random() * nouns.length) ]}"
+     res.reply "#{preface[ Math.floor(Math.random() * preface.length) ]} #{adverbs[ Math.floor(Math.random() * adverbs.length) ]} #{verbs[ Math.floor(Math.random() * verbs.length) ]} #{adjectives[ Math.floor(Math.random() * adjectives.length) ]} #{nouns[ Math.floor(Math.random() * nouns.length) ]}"
      # res.send b
 	 # b = "jdfdf"
      # a = adverbs[ Math.floor(Math.random() * adverbs.length) ]
